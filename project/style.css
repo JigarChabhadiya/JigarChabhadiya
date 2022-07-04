@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior:smooth ;
+}
+#navbar{
+     
+     position: sticky;
+     flex-direction: row;
+     
+
+
+}
+ul{
+    display: flex;
+    list-style: none;
+     
+  
+}
+ul li a{
+
+    text-decoration: none;  
+    padding: 15px 22px;
+    color: white;
+    
+    display: block;
+    border-radius: 70px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+     background-color: white;
+   }
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.4;
+
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+#home::before{
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    background: url("image/i1.jpg") no-repeat center center/cover;
+    opacity: 0.88;
+}
+#home h1{
+    color: white;
+}
+.h-primary{
+    font-size: 3.5rem;
+    padding: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(250, 210, 142, 0.727);
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+}
+
+/* 
+services */
+
+#services{
+    display: flex;
+    margin: 34px;
+}
+.box{
+    border: 2px solid red ;
+    margin: 3px 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: whitesmoke;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    
+}
+#services .box img{
+    height: 200px;
+    width: 200px;
+}
+img{
+  
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    
+   
+}
+.center{
+    text-align: center;
+    
+}
+.h-secondary{
+    font-size: xx-large;                                                                                                                                             
+    
+    padding: 12px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("image/i8.jpg");
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact{
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.32;
+    background: url("image/i9.jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    width: 100%;
+}
